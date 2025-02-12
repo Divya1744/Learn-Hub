@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Course</title>
+    <link rel="icon" href="website_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins&family=Rubik+Dirt&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+            margin:0px;
+            text-transform: capitalize;
+            background-color: rgb(247, 245, 243);
+        }
+        .front{
+            background-color: #807e7e;
+            color:white;
+            width:100%;
+            height:550px;
+            text-align:center;
+        }
+        .front h1{
+            font-size:50px;
+            padding-top:150px;
+            margin:0px;
+        }
+        .front p{
+            font-size:20px;
+            padding-bottom: 20px;
+            padding-top:20px;
+        }
+        button{
+            background-color: #4CAF50;
+            padding:20px;
+            border-style: none;
+            border-radius: 4px;
+            color:white;
+            font-size: 20px;
+            font-weight: 550;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button:hover{
+            cursor:pointer;
+            background-color: #45a049;
+        }
+
+        .syllabus{
+            background-color: rgb(247, 245, 243);
+            text-align:center;
+            color:#4CAF50;
+        }
+        .syllabus h1{
+            font-size: 30px;
+        }
+        .syllabus h2{
+            color:black;
+        }
+        .syllabus p{
+            color:grey;
+        }
+        .syllabus i{
+            font-size: 50px;
+        }
+        .syllabus .grid .card{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height: 230px;
+            width:340px;
+            padding:20px;
+            margin:18px;
+            justify-content: space-around;
+            border-radius: 6px;
+            box-shadow: 1px 1px 3px 1px rgb(164, 163, 163);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .syllabus .grid .card:hover{
+            box-shadow:1px 1px 6px 1px rgb(164, 163, 163);
+            transform: translateY(-4px);
+            cursor:pointer;
+        }
+        .syllabus .grid {
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .instructor #inst-img{
+            text-align: center;
+        }
+        .instructor #inst-img img{
+            border:4px solid #4CAF50;
+            border-radius:50%;
+            height: 250px;
+            width:250px;
+        }
+        .instructor #inst-img p{
+            color:grey;
+        }
+
+        i{
+            font-size:35px;
+            color: #45a049;
+            padding:10px;
+        }
+        .price{
+            margin-top:60px;
+        }
+        .price #one, .price p{
+            display:inline;
+        }
+        .price #pricing{
+            font-size: 35px;
+            margin-bottom:15px;
+        }
+        #back-button{
+            background-color: #4CAF50;
+            padding:15px;
+            font-weight: 500;
+            margin:50px 0 50px 0;
+        }
+        #back-button:hover{
+            cursor:pointer;
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <section class="front">
+        <h1>UI/UX Design Course</h1>
+        <p>Learn to design user-friendly interfaces and master the tools, methods, and strategies used in UI/UX design.</p>
+        
+        <button>Enroll Now</button>
+    </section>
+
+    <section class="syllabus">
+        <h1>Course Syllabus</h1>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-palette"></i>
+                <h2>Design Fundamentals</h2>
+                <p>Understand the basics of UI/UX design, color theory, typography, and layout.</p>
+            </div>
+        
+            <div class="card">
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Wireframing</h2>
+                <p>Learn how to create wireframes and prototypes for web and mobile applications.</p>
+            </div>
+        
+            <div class="card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Responsive Design</h2>
+                <p>Design layouts that adapt to different screen sizes and devices.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user-circle"></i>
+                <h2>User Research</h2>
+                <p>Learn how to conduct user research to design better user experiences.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>UI Prototyping</h2>
+                <p>Master tools like Sketch, Figma, and Adobe XD to create interactive UI prototypes.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Usability Testing</h2>
+                <p>Learn how to conduct usability testing to evaluate and improve your designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="instructor">
+        <div id="inst-img">
+            <h1>Instructor</h1>
+            <img src="img/uiux_mentor.jpg" alt="Instructor Logo">
+            <h1>emma thomas</h1>
+            <p>UI/UX Designer with 12+ years of experience in creating intuitive user interfaces and engaging experiences.</p>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+            <div class="price">
+                <h1 id="pricing">Pricing</h1>
+                <h1 id="one">₹2990</h1>  
+                <p>(Lifetime Access)</p>
+            </div>
+            <a href="index.html#course"><button id="back-button">Back to Course</button></a>
+        </div>
+    </section>
+</body>
+</html>
